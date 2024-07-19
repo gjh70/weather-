@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+         <input  type="text" placeholder="Enter your location" class="input-box">
+            <button  type="button"  id="btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            
+        
+         </div>
+        </div>
+
+        <div class="not">
+            <h1>Sorry,Location not found!!</h1>
+            <img src="images/404.png" alt="404 Error">
+        </div>
+        <div class="weather-body">
+            <img src="images/cloud.png" alt="img" class="weather-img">
+            <div class="weather-box">
+                <p class="temp">0<sup>o</sup>&nbsp;C</p>
+                <p class="des">Light Rain</p>
+            </div>
+            <div class="detail">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12 km/hr</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
